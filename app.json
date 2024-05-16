@@ -1,0 +1,93 @@
+{
+    "name": "SophiaX Music",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://telegra.ph/file/47f0f2c22a29321926352.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "SophiaX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram v2 String Session.",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app name",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "Add your group link here.",
+        "value": "",
+        "required": false
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "Add your channel link here.",
+        "value": "",
+        "required": false
+      },
+      "START_IMG_URL": {
+        "description": "If you want to change it, replace it with your IMAGE URL.",
+        "value": "https://graph.org/file/db7653b29f9b702cb12f8.jpg",
+        "required": true
+      },
+      "PING_IMG_URL": {
+        "description": "If you want to change it, replace it with your IMAGE URL.",
+        "value": "https://telegra.ph/file/62f605a923baccd1e2176.jpg",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
